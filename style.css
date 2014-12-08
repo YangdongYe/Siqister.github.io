@@ -1,0 +1,128 @@
+/*Include this after the bootstrap CSS to override*/
+html,body,h1,h2,h3,h4,p,div,ul,li,svg,header,nav{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    list-style:none;
+}
+
+/*------------Structure-------------*/
+html,body{
+    height: 100%;
+    position: relative;
+    background: rgb(250,250,250);
+}
+
+/*------------header-------------*/
+header{
+    width:100%;
+    height:60px;
+    position:absolute;
+    top:0;
+    background:rgb(50,50,50);
+    color:#fff;
+    font-size:16px;
+    font-family:"Open Sans Condensed", sans-serif;
+}
+header .container-fluid{
+    position:relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    height:100%;
+}
+header .container-fluid .navbar-header{
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+    header .navbar-header .logo{
+        float:left;
+        position: relative;
+        width: 59px;
+        height: 40px;
+        background: url('assets/logo.png');
+        display:inline-block;
+        top:50%;
+        margin-top:-20px;
+    }
+    header .navbar-header .title{
+        float:left;
+        padding-left:15px;
+        height:100%;
+        line-height:60px;
+        font-weight:700;
+    }
+    header .navbar-header .navbar-toggle{
+        margin-top:13px;
+        background:rgb(20,20,20);
+    }
+        header .navbar-header .navbar-toggle>.icon-bar{
+            background:#fff;
+        }
+header .container-fluid .main-nav{
+    float:right;
+    margin-left:auto;
+    margin-right:auto;
+}
+    header .main-nav ul{
+        float:left;
+        font-weight:700;
+    }
+        header .main-nav ul>li{
+            height:60px;
+            float:left;
+            line-height:60px;
+        }
+        header .main-nav li>a{
+            color:#fff;
+            padding: 0 15px;
+            border-left: 1px solid #fff;
+        }
+        header .main-nav li:last-child>a{
+            border-right: 1px solid #fff;
+        }
+        header .main-nav .active>a{
+            text-decoration:underline;
+        }
+    header .main-nav .credit{
+        font-size: 0.8em;
+        height:100%;
+        float:left;
+        padding:15px 0 15px 15px;
+        line-height:15px;
+    }
+        header .main-nav .credit>span{
+            display:block;
+            text-align:right;
+        }
+
+@media only screen and (max-width:768px){
+    header .navbar-header .title{
+        display:none;
+    }
+    header .main-nav{
+        background:rgb(50,50,50);
+        position:absolute;
+        left:0;
+        right:0;
+    }
+        header .main-nav ul{
+            width:100%;
+        }
+            header .main-nav ul>li{
+                width:100%;
+            }
+                header .main-nav ul li>a,
+                header .main-nav ul li:last-child>a{
+                    border:none;
+                    display:block;
+                    padding:0 30px;
+                    border-bottom:1px solid rgb(100,100,100);
+                }
+        header .main-nav .credit{
+            padding-left:30px;
+        }
+            header .main-nav .credit>span{
+                text-align:left;
+            }
+}
