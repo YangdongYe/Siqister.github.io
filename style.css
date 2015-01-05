@@ -21,13 +21,33 @@ body{
     font-family:"Open Sans Condensed", sans-serif;
     font-size:16px;
 }
-.meta{
+p{
     font-family:"Crimson Text", serif;
-    font-size: 1.2em;
+}
+h1,h2,h3{
+    font-weight:bold;
+    margin-bottom:20px;
+}
+h2{
+    font-size:3em;
+}
+h3{
+    font-size:2em;
+}
+h4{
+    font-size:1.5em;
+}
+p{
+    font-size:1.2em;
+    margin: 10px 0;
+}
+.meta{
+    margin-bottom: 30px;
 }
 .callout{
     font-size: 3em;
     line-height:95%;
+    text-align:center;
 }
 
 
@@ -35,12 +55,13 @@ body{
 header{
     width:100%;
     height:60px;
-    position:absolute;
-    top:0;
     background:rgb(50,50,50);
     color:#fff;
     font-size:16px;
     font-family:"Open Sans Condensed", sans-serif;
+    position:fixed;
+    top:0;
+    z-index:99999;
 }
 header .container-fluid{
     position:relative;
@@ -81,6 +102,7 @@ header .container-fluid .main-nav{
     float:right;
     margin-left:auto;
     margin-right:auto;
+    z-index:999;
 }
     header .main-nav ul{
         float:left;
@@ -148,7 +170,6 @@ header .container-fluid .main-nav{
 /*------------static content-------------*/
 .main{
     position:relative;
-    top:80px;
 }
 .main .q-a>li{
     border-bottom: 1px solid rgb(50,50,50);
@@ -178,3 +199,37 @@ header .container-fluid .main-nav{
         font-size:1.3em;
     }
 
+/*------------About (parallax scrolling)-------------*/
+.slide{
+    position:relative;
+    padding: 350px 0 0; /* available height for parallax background*/
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+    .slide .slide-content{
+        background: rgb(250,250,250);
+        padding:50px 0;
+    }
+#section-1{
+    background-image:url('../assets/bcg-1.jpg');
+}
+#section-2{
+    background-image:url('../assets/bcg-2.jpg');
+}
+    .slide .slide-content .theme img{
+        width:50%;
+        display:block;
+        min-width:100px;
+        margin:auto;
+        border-top:3px solid #333;
+    }
+    .slide .slide-content h2,
+    .slide .slide-content h3{
+        text-align:center;
+    }
+    .slide .slide-content .project .project-image{
+        width:100%;
+        height:200px;
+        background:rgb(180,180,180);
+    }

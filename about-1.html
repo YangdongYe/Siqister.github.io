@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Go Boston 2030</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+	<link href="bower_components\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"/>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<!--button is hidden when width is greater than 768-->
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+     			<div class="logo"></div>
+     			<div class="title">Imagine Our Transportation Future</div>
+    		</div><!--.navbar-header-->
+
+			<nav class="collapse navbar-collapse main-nav" role="navigation" id="main-nav">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li class="active"><a href="#">Participate</a></li>
+				</ul>
+				<div class="credit">
+					<span>Mayor Martin J. Walsh</span>
+					<span>Boston Transportation Department</span>
+				</div>
+			</nav><!--.collapse-->
+		</div><!--.container-fluid-->
+	</header>
+
+	<div class="main">
+		<section id="section-1" class="slide"
+			data-top="background-position:50% 0px;" 
+			data--350-top-top="background-position:50% -150px;"
+		><!--contains background image-->
+			<div class="slide-content"><!--offset from top of section-->
+				<div class="container">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="meta callout">
+							Go Boston 2030 is a City of Boston initiative to envision a bold transportation future for Boston for the next 5, 10 and 15 years.
+						</p>
+						<p class="meta">The plan will develop a far-reaching vision that proposes transformative polices and projects to improve transportation for the city’s residents, businesses and visitors. The two-year process will be driven by data and steered through an unprecedented and inclusive public engagement process.</p>
+					</div>
+					<div class="col-md-4 theme">
+						<h3>Environment</h3>
+						<img src="../assets/theme_env.png" alt="environment"/>
+						<p class="meta">The plan will work to reduce greenhouse gas emissions from transportation by reducing the number of miles driven per person and increasing the number of trips made without a car. Transportation infrastructure should be prepared for extreme weather events.</p>
+					</div>
+					<div class="col-md-4 theme">
+						<h3>Economy</h3>
+						<img src="../assets/theme_econ.png" alt="economy"/>
+						<p class="meta">The plan will foster connections to employment, support development and neighborhood revitalization, and enhance growth of new industries like healthcare and technology start-ups.</p>
+					</div>
+					<div class="col-md-4 theme">
+						<h3>Equity</h3>
+						<img src="../assets/theme_equity.png" alt="equity"/>
+						<p class="meta">The plan will strive for all Bostonians to have access to quality transportation that helps them reach jobs, education, health care, affordable housing, healthy food, culture and open space opportunities. Transportation options in every neighborhood should be accessible and safe.</p>
+					</div>
+				</div>
+			</div><!--.slide-content-->
+		</section>
+		<section id="section-2" class="slide"
+			data-bottom-top="background-position:50% 0px;" 
+			data-top-bottom="background-position:50% -550px;"
+		>
+			<div class="slide-content"><!--offset from top of section-->
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="project col-md-4">
+						<div class="project-image">
+						</div>
+						<p class="meta">Boston Complete Streets</p>
+					</div>
+					<div class="project col-md-4">
+						<div class="project-image">
+						</div>
+						<p class="meta">Another Project</p>
+					</div>
+					<div class="project col-md-4">
+						<div class="project-image">
+						</div>
+						<p class="meta">Another Project</p>
+					</div>
+					<div class="project col-md-4">
+						<div class="project-image">
+						</div>
+						<p class="meta">Another Project</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Scripts -->
+	<script src="bower_components\jquery\dist\jquery.min.js"></script>
+	<script src="bower_components\bower-skrollr\skrollr.min.js"></script>
+	<script src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+	<script src="script/main.js"></script>
+</body>
+</html>
