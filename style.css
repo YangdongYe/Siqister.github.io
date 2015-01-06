@@ -1,48 +1,48 @@
 /*Include this after the bootstrap CSS to override*/
-html,body,h1,h2,h3,h4,p,div,ul,li,svg,header,nav{
+html,body,h1,h2,h3,h4,p,div,ul,li,svg,header,nav,blockquote{
     margin:0;
     padding:0;
     font-size:100%;
     list-style:none;
+    border:none;
 }
 
-/*------------Structure-------------*/
+/*------------Global-------------*/
 html,body{
     height: 100%;
     position: relative;
     background: rgb(250,250,250);
 }
-p{
-    margin: 5px 0 10px 0;
-}
+a{ color:#333;}
+a:hover{ color:#333;}
 
 /*------------font-------------*/
 body{
     font-family:"Open Sans Condensed", sans-serif;
     font-size:16px;
 }
-p{
+p,.body-list{
     font-family:"Crimson Text", serif;
+    font-size:1.2em;
+    margin: 10px 0;
 }
 h1,h2,h3{
     font-weight:bold;
     margin-bottom:20px;
 }
-h2{
-    font-size:3em;
-}
-h3{
-    font-size:2em;
-}
-h4{
-    font-size:1.5em;
-}
-p{
-    font-size:1.2em;
-    margin: 10px 0;
-}
+h2{ font-size:3em; }
+h3{ font-size:2em; }
+h4{ font-size:1.5em; }
 .meta{
     margin-bottom: 30px;
+}
+.quote{
+    font-size: 2em;
+    line-height:100%;
+    background:url('../assets/eb1yrr.jpg') bottom right no-repeat;
+}
+.source{
+    text-align:right;
 }
 .callout{
     font-size: 3em;
@@ -205,18 +205,22 @@ header .container-fluid .main-nav{
     padding: 350px 0 0; /* available height for parallax background*/
     background-position:center center;
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100%;
 }
     .slide .slide-content{
         background: rgb(250,250,250);
-        padding:50px 0;
+        padding:50px 0 0;
     }
-#section-1{
-    background-image:url('../assets/bcg-1.jpg');
-}
-#section-2{
-    background-image:url('../assets/bcg-2.jpg');
-}
+#section-1{ background-image:url('../assets/bcg-1.jpg'); }
+#section-2{ background-image:url('../assets/bcg-2.jpg'); }
+#section-3{ background-image:url('../assets/bcg-1.jpg'); }
+#section-4{ background-image:url('../assets/bcg-1.jpg');}
+    .slide .slide-content .bq{
+        font-style:italic;
+        margin-bottom:30px;
+        background:url('../assets/a9l0g3.jpg') top left no-repeat;
+        padding:0 5% 0 10%;
+    }
     .slide .slide-content .theme img{
         width:50%;
         display:block;
@@ -225,7 +229,7 @@ header .container-fluid .main-nav{
         border-top:3px solid #333;
     }
     .slide .slide-content h2,
-    .slide .slide-content h3{
+    #section-1 .slide-content h3{
         text-align:center;
     }
     .slide .slide-content .project .project-image{
@@ -233,3 +237,52 @@ header .container-fluid .main-nav{
         height:200px;
         background:rgb(180,180,180);
     }
+    #section-3 .slide-content ul{
+        margin-bottom:30px;
+        display:block;
+    }
+        #section-3 .slide-content ul>li{
+            margin-bottom:10px;
+        }
+            #section-3 .slide-content ul>li>.title{
+                display:block;
+                font-size:0.9em;
+                font-style:italic;
+            }
+
+    #section-4 .timeline-container{
+        width:100%;
+        overflow:hidden;
+    }
+        .timeline-container .timeline-slide{
+            position:relative;
+            width:100%;
+            padding:20px 0;
+        }
+            .timeline-container .timeline-slide .tl-img{
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:30%;
+                width:60px;
+                background-image:url('../assets/tl_mid.png'),url('../assets/tl_line.png');
+                background-position:center center,center top;
+                background-repeat:no-repeat,repeat-y;
+            }
+            .timeline-container .timeline-slide:first-child .tl-img{
+                top:50%;
+                background-image:url('../assets/tl_start.png'),url('../assets/tl_line.png');
+                background-position:center 0,center center;
+                background-repeat:no-repeat,repeat-y;
+            }
+            .timeline-container .timeline-slide:last-child .tl-img{
+                bottom:50%;
+                background-image:url('../assets/tl_end.png'),url('../assets/tl_line.png');
+                background-position:center bottom,center center;
+                background-repeat:no-repeat,repeat-y;
+            }
+            .timeline-container .timeline-slide .callout,
+            .timeline-container .timeline-slide .tl-marker h3{
+                text-align:left;
+            }
+
