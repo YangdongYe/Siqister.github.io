@@ -13,8 +13,9 @@ html,body{
     position: relative;
     background: rgb(250,250,250);
 }
-a{ color:#333;}
-a:hover{ color:#333;}
+a{ color:#333; }
+a:hover{ color:#000;}
+p a{ text-decoration: underline;}
 
 /*------------font-------------*/
 body{
@@ -28,7 +29,7 @@ p,.body-list{
 }
 h1,h2,h3{
     font-weight:bold;
-    margin-bottom:20px;
+    margin:10px 0 20px;
 }
 h2{ font-size:3em; }
 h3{ font-size:2em; }
@@ -40,6 +41,7 @@ h4{ font-size:1.5em; }
     font-size: 2em;
     line-height:100%;
     background:url('../assets/eb1yrr.jpg') bottom right no-repeat;
+    padding-bottom:15px;
 }
 .source{
     text-align:right;
@@ -167,12 +169,12 @@ header .container-fluid .main-nav{
             }
 }
 
-/*------------static content-------------*/
+/*------------Q & A-------------*/
 .main{
     position:relative;
 }
 .main .q-a>li{
-    border-bottom: 1px solid rgb(50,50,50);
+    border-bottom: 1px solid rgb(100,100,100);
     padding: 5px 0;
 }
 .main .q-a>li:after{
@@ -199,7 +201,7 @@ header .container-fluid .main-nav{
         font-size:1.3em;
     }
 
-/*------------About (parallax scrolling)-------------*/
+/*------------About (with parallax scrolling)-------------*/
 .slide{
     position:relative;
     padding: 350px 0 0; /* available height for parallax background*/
@@ -215,6 +217,7 @@ header .container-fluid .main-nav{
 #section-2{ background-image:url('../assets/bcg-2.jpg'); }
 #section-3{ background-image:url('../assets/bcg-1.jpg'); }
 #section-4{ background-image:url('../assets/bcg-1.jpg');}
+#section-q-a{background-image:url('../assets/bcg-q-a.jpg');}
     .slide .slide-content .bq{
         font-style:italic;
         margin-bottom:30px;
@@ -237,6 +240,7 @@ header .container-fluid .main-nav{
         height:200px;
         background:rgb(180,180,180);
     }
+    /* #section-3 is the leadership section */
     #section-3 .slide-content ul{
         margin-bottom:30px;
         display:block;
@@ -249,7 +253,7 @@ header .container-fluid .main-nav{
                 font-size:0.9em;
                 font-style:italic;
             }
-
+    /* #section-4 is the timeline */
     #section-4 .timeline-container{
         width:100%;
         overflow:hidden;
@@ -259,6 +263,10 @@ header .container-fluid .main-nav{
             width:100%;
             padding:20px 0;
         }
+            .timeline-container .timeline-slide img{
+                margin-bottom:10px;
+            }
+            /* .tl-img draws the graphic timeline */
             .timeline-container .timeline-slide .tl-img{
                 position:absolute;
                 top:0;
@@ -284,5 +292,10 @@ header .container-fluid .main-nav{
             .timeline-container .timeline-slide .callout,
             .timeline-container .timeline-slide .tl-marker h3{
                 text-align:left;
+            }
+            @media only screen and (max-width:768px){
+                .timeline-container .timeline-slide .tl-img{
+                    display:none;
+                }
             }
 
