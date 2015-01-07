@@ -215,9 +215,9 @@ header .container-fluid .main-nav{
     }
 #section-1{ background-image:url('../assets/bcg-1.jpg'); }
 #section-2{ background-image:url('../assets/bcg-2.jpg'); }
-#section-3{ background-image:url('../assets/bcg-1.jpg'); }
-#section-4{ background-image:url('../assets/bcg-1.jpg');}
-#section-q-a{background-image:url('../assets/bcg-q-a.jpg'); background-position:top center;}
+#section-3{ background-image:url('../assets/bcg-2.jpg'); }
+#section-4{ background-image:url('../assets/bcg-3.jpg'); }
+#section-q-a{background-image:url('../assets/bcg-q-a.jpg'); background-position:center -100px; padding-top:450px;}
     .slide .slide-content .bq{
         font-style:italic;
         margin-bottom:30px;
