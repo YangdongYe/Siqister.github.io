@@ -218,6 +218,7 @@ header .container-fluid .main-nav{
 #section-3{ background-image:url('../assets/bg-2.jpg'); }
 #section-4{ background-image:url('../assets/bg-3.jpg'); }
 #section-q-a{background-image:url('../assets/bcg-q-a.jpg'); background-position:center -100px; padding-top:450px;}
+#section-news{background-image:url('../assets/bcg-q-a.jpg'); background-position:center -100px; padding-top:450px;}
     .slide .slide-content .bq{
         font-style:italic;
         margin-bottom:30px;
@@ -298,4 +299,15 @@ header .container-fluid .main-nav{
                     display:none;
                 }
             }
+
+    /* #section-news is the timeline */
+    #section-news .post-meta p{
+        font-family:"Open Sans Condensed", sans-serif;
+    }
+    #section-news .post-meta .avatar{
+        border-radius:95px;
+        -moz-border-radius:95px;
+        -webkit-border-radius:95px;
+    }
+
 
